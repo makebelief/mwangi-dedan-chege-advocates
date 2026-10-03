@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mwangi-dedan-chege-advocates.vercel.app/sitemap.xml

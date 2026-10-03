@@ -1,0 +1,4 @@
+
+(()=>{const btn=document.querySelector('.menu-btn'),nav=document.querySelector('.mobile-nav');if(btn&&nav){btn.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}));}
+const rail=document.querySelector('.contact-rail'),toggle=document.querySelector('.rail-toggle');if(rail&&toggle){toggle.addEventListener('click',()=>rail.classList.toggle('collapsed'));}
+const form=document.querySelector('[data-contact-form]');if(form){form.addEventListener('submit',e=>{e.preventDefault();const status=form.parentElement.querySelector('.form-status');if(status)status.textContent='Thank you. This demo form will be connected to the firm’s preferred email or WhatsApp channel during final setup.';});}})();
